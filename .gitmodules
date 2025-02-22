@@ -1,0 +1,6 @@
+[submodule "to-do-app-web"]
+	path = to-do-app-web
+	url = https://github.com/Roshika98/to-do-app-web.git
+[submodule "to-do-app-service"]
+	path = to-do-app-service
+	url = https://github.com/Roshika98/to-do-app-service.git
