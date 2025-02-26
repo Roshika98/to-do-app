@@ -74,7 +74,7 @@ git submodule update --init --recursive
 To run both backend and frontend using Docker Compose:
 
 ```sh
-docker-compose up --build
+docker compose up --build -d
 ```
 
 ## Contributing
