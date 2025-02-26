@@ -14,13 +14,21 @@ A simple Todo Web App consisting of a backend service (`todoappservice`) built w
 This repository consists of two main projects:
 
 1. **todoappservice (Backend - NestJS)**
+
    - Provides RESTful APIs for managing todos
    - Uses a database for persistent storage
    - Implements authentication and authorization
 
 2. **todoappweb (Frontend - Angular)**
+
    - Consumes the APIs provided by `todoappservice`
    - Provides a user-friendly interface to manage todos
+
+## Live Demo
+
+You can view a live demo of the application at:
+
+[http://mydevprototypes.xyz/todo-app](HTTP://mydevprototypes.xyz/todo-app)
 
 ## Getting Started
 
@@ -42,7 +50,7 @@ git submodule update --init --recursive
 
 1. Navigate to the backend directory:
    ```sh
-   cd to-do-app/todoappservice
+   cd to-do-app/to-do-app-service
    ```
 2. Install dependencies:
    ```sh
@@ -58,7 +66,7 @@ git submodule update --init --recursive
 
 1. Navigate to the frontend directory:
    ```sh
-   cd ../todoappweb
+   cd ../to-do-app-web
    ```
 2. Install dependencies:
    ```sh
@@ -80,5 +88,4 @@ docker compose up --build -d
 ## Contributing
 
 Feel free to contribute by opening issues or submitting pull requests.
-
 
