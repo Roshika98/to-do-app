@@ -1,0 +1,26 @@
+services:
+  to-do-web:
+    build:
+      context: ./to-do-app-web
+    volumes:
+      - ./to-do-app-web/dist:/app/dist
+    depends_on:
+      - to-do-service
+
+  to-do-service:
+    build:
+      context: ./to-do-app-service
+    ports:
+      - 3000:3000
+
+  nginx:
+    build:
+      context: ./nginx
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - ./to-do-app-web/dist:/app/dist
+    depends_on:
+      - to-do-web
+      - to-do-service
