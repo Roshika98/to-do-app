@@ -46,38 +46,10 @@ If you've already cloned the repository but didn't include submodules, run:
 git submodule update --init --recursive
 ```
 
-### Setting Up the Backend (todoappservice)
-
-1. Navigate to the backend directory:
-   ```sh
-   cd to-do-app/to-do-app-service
-   ```
-2. Install dependencies:
-   ```sh
-   npm install
-   ```
-3. Configure environment variables (`.env` file required)
-4. Start the backend server:
-   ```sh
-   npm run start
-   ```
-
-### Setting Up the Frontend (todoappweb)
-
-1. Navigate to the frontend directory:
-   ```sh
-   cd ../to-do-app-web
-   ```
-2. Install dependencies:
-   ```sh
-   npm install
-   ```
-3. Start the development server:
-   ```sh
-   ng serve
-   ```
 
 ## Running with Docker Compose
+
+Create a .env file: Copy the example file .env.example and rename it to .env. Fill in the required details.
 
 To run both backend and frontend using Docker Compose:
 
