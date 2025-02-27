@@ -13,6 +13,8 @@ services:
       context: ./to-do-app-service
     ports:
       - 3000:3000
+    env_file:
+      - .env
 
   nginx:
     build:
